@@ -1,0 +1,61 @@
+    <!-- snowflakes (subtle) -->
+    <use href="#flake" transform="translate(620,92)"/>
+    <use href="#flake" transform="translate(700,150) scale(0.7)"/>
+    <use href="#flake" transform="translate(818,112) scale(0.8)"/>
+    <use href="#flake" transform="translate(560,190) scale(0.6)"/>
+
+    <!-- star -->
+    <use href="#star" transform="translate(770,70)"/>
+
+    <!-- back hills -->
+    <path fill="#E6BDB3" d="M40,350 C140,300 220,300 320,330 C420,360 480,290 600,282 C700,276 760,320 860,300 L860,560 L40,560 Z"/>
+
+    <!-- front hills with a hairpin climb -->
+    <path fill="#C98579" d="M40,420 C150,380 260,370 380,396 C480,418 560,330 690,322 C780,318 820,350 860,344 L860,560 L40,560 Z"/>
+    <g fill="#EAF0F4">
+      <rect x="709.5" y="339.5" width="46.8" height="5" rx="2.5" transform="rotate(16.7 712 342)"/>
+      <rect x="749.5" y="351.5" width="68.6" height="5" rx="2.5" transform="rotate(167.3 752 354)"/>
+      <rect x="687.5" y="365.5" width="71.0" height="5" rx="2.5" transform="rotate(14.0 690 368)"/>
+      <rect x="751.5" y="381.5" width="66.6" height="5" rx="2.5" transform="rotate(166.9 754 384)"/>
+      <rect x="691.5" y="395.5" width="31.1" height="5" rx="2.5" transform="rotate(32.5 694 398)"/>
+    </g>
+
+    <!-- foreground hill + road -->
+    <path fill="#2E5247" d="M40,488 C260,486 520,440 860,392 L860,560 L40,560 Z"/>
+    <path fill="#EAF0F4" d="M40,506 C260,504 520,458 860,410 L860,428 C520,476 260,522 40,524 Z"/>
+
+    <!-- pines -->
+    <g fill="#1F3B34">
+      <polygon points="95,462 79.6,488.4 86.8,488.4 76.8,510 113.2,510 103.2,488.4 110.4,488.4"/>
+      <polygon points="128,476 117.1,494.7 122.2,494.7 115.1,510 140.9,510 133.8,494.7 138.9,494.7"/>
+      <polygon points="760,398 743.4,426.6 751.2,426.6 740.2,450 779.8,450 768.8,426.6 776.6,426.6" transform="translate(0,-4)"/>
+      <polygon points="800,392 787.8,412.9 793.5,412.9 785.6,430 814.4,430 806.5,412.9 812.2,412.9"/>
+      <polygon points="640,488 627.8,508.9 633.5,508.9 625.6,526 654.4,526 646.5,508.9 652.2,508.9"/>
+    </g>
+
+    <!-- road cyclist climbing -->
+    <g transform="translate(470.1,479.4) rotate(-7.9) scale(1.35) translate(0,-21)" fill="#1E2F3D">
+      <path fill-rule="evenodd" d="M-21,0 a21,21 0 1,0 42,0 a21,21 0 1,0 -42,0 Z M-17.5,0 a17.5,17.5 0 1,0 35.0,0 a17.5,17.5 0 1,0 -35.0,0 Z"/>
+      <path fill-rule="evenodd" d="M41,0 a21,21 0 1,0 42,0 a21,21 0 1,0 -42,0 Z M44.5,0 a17.5,17.5 0 1,0 35.0,0 a17.5,17.5 0 1,0 -35.0,0 Z"/>
+      <rect x="-1.75" y="-1.75" width="28.6" height="3.5" rx="1.75" transform="rotate(4.6 0 0)"/>
+      <rect x="-1.5" y="-1.5" width="34.9" height="3" rx="1.5" transform="rotate(-57.8 0 0)"/>
+      <rect x="23" y="0" width="34.1" height="4" rx="2" transform="rotate(-105.4 25 2)"/>
+      <rect x="15" y="-29" width="40.0" height="4" rx="2" transform="rotate(-1.6 17 -27)"/>
+      <rect x="22.75" y="-0.25" width="41.1" height="4.5" rx="2.25" transform="rotate(-35.0 25 2)"/>
+      <rect x="53.25" y="-20.75" width="23.7" height="3.5" rx="1.75" transform="rotate(69.8 55 -19)"/>
+      <rect x="50.75" y="-30.25" width="13.7" height="4.5" rx="2.25" transform="rotate(77.5 53 -28)"/>
+      <rect x="51.25" y="-29.75" width="10.8" height="3.5" rx="1.75" transform="rotate(-15.9 53 -28)"/>
+      <rect x="58.25" y="-31.75" width="10.2" height="3.5" rx="1.75" transform="rotate(63.4 60 -30)"/>
+      <rect x="61.25" y="-25.75" width="9.9" height="3.5" rx="1.75" transform="rotate(128.7 63 -24)"/>
+      <rect x="7.75" y="-33.25" width="16.5" height="4.5" rx="2.25" transform="rotate(0.0 10 -31)"/>
+      <rect x="13.5" y="-40.5" width="30.6" height="7" rx="3.5" transform="rotate(53.6 17 -37)"/>
+      <rect x="28" y="-21" width="33.7" height="6" rx="3" transform="rotate(115.6 31 -18)"/>
+      <rect x="42.25" y="-54.75" width="19.1" height="5.5" rx="2.75" transform="rotate(54.0 45 -52)"/>
+      <rect x="50.5" y="-43.5" width="19.4" height="5" rx="2.5" transform="rotate(56.3 53 -41)"/>
+      <rect x="9.5" y="-44.5" width="46.8" height="15" rx="7.5" fill="#A8665E" transform="rotate(-28.2 17 -37)"/>
+      <rect x="13.5" y="-40.5" width="32.8" height="7" rx="3.5" transform="rotate(35.5 17 -37)"/>
+      <rect x="35" y="-25" width="37.4" height="6" rx="3" transform="rotate(99.2 38 -22)"/>
+      <rect x="28.75" y="7.75" width="12.5" height="4.5" rx="2.25" transform="rotate(0.0 31 10)"/>
+      <path d="M44,-66 a10,9 0 0,1 18,4 l-2,3 h-17 z"/>
+      <circle cx="54" cy="-60" r="6.5"/>
+    </g>
