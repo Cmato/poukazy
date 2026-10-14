@@ -2,6 +2,6 @@
   "slug": "cyklovikend",
   "title": "Cyklovíkend",
   "titleSize": 92,
-  "aria": "Darčekový poukaz: Cyklovíkend, najviac 4 dni, predĺžený víkend, termín podľa dohody",
-  "stub": "    <text x=\"1010\" y=\"130\" class=\"sans\" font-size=\"19\" opacity=\"0.7\">Termín</text>\n    <!-- \"≤\" drawn as shapes: the font has no glyph for it -->\n    <polygon points=\"953,163 923.5,177.5 953,192 953,185.3 937,177.5 953,169.7\"/>\n    <rect x=\"923.5\" y=\"196\" width=\"29.5\" height=\"6\" rx=\"1\"/>\n    <text x=\"967.5\" y=\"202\" class=\"serif\" font-size=\"56\" text-anchor=\"start\">4 dni</text>\n    <text x=\"1010\" y=\"242\" class=\"sans\" font-size=\"18\" opacity=\"0.7\">predĺžený víkend</text>\n    <text x=\"1010\" y=\"302\" class=\"serif\" font-size=\"40\">podľa</text>\n    <text x=\"1010\" y=\"346\" class=\"serif\" font-size=\"40\">dohody</text>"
+  "aria": "Darčekový poukaz: Cyklovíkend, približne 4 dni, predĺžený víkend, termín podľa dohody",
+  "stub": "    <text x=\"1010\" y=\"130\" class=\"sans\" font-size=\"19\" opacity=\"0.7\">Termín</text>\n    <text x=\"1010\" y=\"202\" class=\"serif\" font-size=\"56\">~ 4 dni</text>\n    <text x=\"1010\" y=\"242\" class=\"sans\" font-size=\"18\" opacity=\"0.7\">predĺžený víkend</text>\n    <text x=\"1010\" y=\"302\" class=\"serif\" font-size=\"40\">podľa</text>\n    <text x=\"1010\" y=\"346\" class=\"serif\" font-size=\"40\">dohody</text>"
 }
