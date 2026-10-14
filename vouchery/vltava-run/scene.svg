@@ -33,7 +33,7 @@
     <g fill="#FFFFFF" opacity="0.7">
       <rect x="548" y="392" width="34" height="4" rx="2"/>
       <rect x="408" y="458" width="26" height="4" rx="2"/>
-      <rect x="430" y="512" width="44" height="4" rx="2"/>
+      <rect x="396" y="486" width="32" height="4" rx="2"/>
     </g>
 
     <!-- pines -->
@@ -46,7 +46,7 @@
     </g>
 
     <!-- runner on the riverbank -->
-    <g transform="translate(222,500) scale(1.15)" fill="#1E2F3D">
+    <g transform="translate(222,464) scale(1.15)" fill="#1E2F3D">
       <rect x="-3.25" y="-3.25" width="24.0" height="6.5" rx="3.25" transform="rotate(121.0 0 0)"/>
       <rect x="-12" y="12" width="23.1" height="6" rx="3" transform="rotate(159.4 -9 15)"/>
       <rect x="4.25" y="-32.75" width="22.5" height="5.5" rx="2.75" transform="rotate(135.0 7 -30)"/>

@@ -9,7 +9,7 @@ Each voucher lives in vouchery/<name>/ with:
   scene.svg     the left-panel illustration (snowflakes, star, landscape); drawn
                 under the title, so keep x < 480, y < 240 clear
 
-Output: poukaz-<slug>.html in the project root, and docs/<slug>.png (2400×1200,
+Output: poukaz-<slug>.html in the project root, and docs/<slug>.png (2340×900,
 rendered with headless Chrome) for GitHub Pages.
 
 Usage: python3 build.py            # all vouchers
@@ -25,8 +25,8 @@ from pathlib import Path
 ROOT = Path(__file__).parent
 TEMPLATE = (ROOT / "base" / "template.html").read_text(encoding="utf-8")
 CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
-# Pin the SVG to the 1200×600 viewport so the screenshot is exactly the voucher.
-PNG_CSS = "<style>body { padding: 0; } svg { width: 1200px; max-width: none; }</style></head>"
+# Pin the SVG to the 1170×450 viewport so the screenshot is exactly the voucher.
+PNG_CSS = "<style>body { padding: 0; } svg { width: 1170px; max-width: none; }</style></head>"
 
 
 def render_png(html: str, out: Path):
@@ -35,7 +35,7 @@ def render_png(html: str, out: Path):
         f.write(html.replace("</head>", PNG_CSS, 1))
     cmd = [
         CHROME, "--headless=new", "--hide-scrollbars",
-        "--window-size=1200,600", "--force-device-scale-factor=2",
+        "--window-size=1170,450", "--force-device-scale-factor=2",
         "--virtual-time-budget=10000",  # give Google Fonts time to load
         f"--screenshot={out}", Path(f.name).as_uri(),
     ]
