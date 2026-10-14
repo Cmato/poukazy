@@ -1,0 +1,61 @@
+    <!-- snowflakes (subtle) -->
+    <use href="#flake" transform="translate(640,104)"/>
+    <use href="#flake" transform="translate(700,64) scale(0.7)"/>
+    <use href="#flake" transform="translate(820,150) scale(0.8)"/>
+    <use href="#flake" transform="translate(610,250) scale(0.6)"/>
+
+    <!-- star above Prague -->
+    <use href="#star" transform="translate(790,92)"/>
+
+    <!-- back hills (Šumava) -->
+    <polygon fill="#E6BDB3" points="40,330 130,298 230,318 340,282 450,306 560,290 660,316 760,300 860,312 860,560 40,560"/>
+
+    <!-- Prague skyline at the finish -->
+    <g fill="#C98579">
+      <rect x="672" y="296" width="96" height="14"/>
+      <rect x="702" y="282" width="46" height="16"/>
+      <polygon points="706,282 711,262 716,282"/>
+      <polygon points="718,282 723,262 728,282"/>
+      <rect x="734" y="258" width="12" height="26"/>
+      <polygon points="732,258 740,236 748,258"/>
+      <rect x="682" y="288" width="8" height="10"/>
+      <polygon points="680,288 686,278 692,288"/>
+    </g>
+
+    <!-- front hills -->
+    <polygon fill="#C98579" points="40,410 150,372 260,396 360,358 450,384 530,366 610,350 700,372 790,352 860,366 860,560 40,560"/>
+
+    <!-- foreground banks -->
+    <polygon fill="#2E5247" points="40,492 160,470 290,488 420,474 560,492 700,468 860,482 860,560 40,560"/>
+
+    <!-- the Vltava -->
+    <path fill="#A9C3D1" d="M598,312 C640,330 668,352 630,376 C580,408 470,420 450,456 C432,490 470,526 500,560 L310,560 C330,520 340,480 380,448 C430,410 560,390 600,364 C624,348 610,326 590,312 Z"/>
+    <g fill="#FFFFFF" opacity="0.7">
+      <rect x="548" y="392" width="34" height="4" rx="2"/>
+      <rect x="408" y="458" width="26" height="4" rx="2"/>
+      <rect x="430" y="512" width="44" height="4" rx="2"/>
+    </g>
+
+    <!-- pines -->
+    <g fill="#1F3B34">
+      <polygon points="95,450 79.6,476.4 86.8,476.4 76.8,498 113.2,498 103.2,476.4 110.4,476.4"/>
+      <polygon points="128,468 117.1,486.7 122.2,486.7 115.1,502 140.9,502 133.8,486.7 138.9,486.7"/>
+      <polygon points="720,445 703.4,473.6 711.2,473.6 700.2,497 739.8,497 728.8,473.6 736.6,473.6"/>
+      <polygon points="756,456 743.8,476.9 749.5,476.9 741.6,494 770.4,494 762.5,476.9 768.2,476.9"/>
+      <polygon points="808,448 793.3,473.3 800.2,473.3 790.5,494 825.5,494 815.8,473.3 822.7,473.3"/>
+    </g>
+
+    <!-- runner on the riverbank -->
+    <g transform="translate(222,500) scale(1.15)" fill="#1E2F3D">
+      <rect x="-3.25" y="-3.25" width="24.0" height="6.5" rx="3.25" transform="rotate(121.0 0 0)"/>
+      <rect x="-12" y="12" width="23.1" height="6" rx="3" transform="rotate(159.4 -9 15)"/>
+      <rect x="4.25" y="-32.75" width="22.5" height="5.5" rx="2.75" transform="rotate(135.0 7 -30)"/>
+      <rect x="-7.5" y="-20.5" width="16.3" height="5" rx="2.5" transform="rotate(-135.0 -5 -18)"/>
+      <rect x="-6.5" y="-6.5" width="43.8" height="13" rx="6.5" fill="#A8665E" transform="rotate(-76.9 0 0)"/>
+      <rect x="-3.25" y="-3.25" width="24.0" height="6.5" rx="3.25" transform="rotate(31.0 0 0)"/>
+      <rect x="12" y="6" width="27.2" height="6" rx="3" transform="rotate(98.1 15 9)"/>
+      <rect x="9.5" y="27.5" width="12.0" height="5" rx="2.5"/>
+      <rect x="4.25" y="-32.75" width="20.4" height="5.5" rx="2.75" transform="rotate(47.7 7 -30)"/>
+      <rect x="14.5" y="-21.5" width="18.5" height="5" rx="2.5" transform="rotate(-48.0 17 -19)"/>
+      <circle cx="12" cy="-44" r="7.5"/>
+    </g>
