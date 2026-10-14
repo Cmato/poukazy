@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Poukaz: Na zážitky</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Outfit:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  html, body { margin: 0; height: 100%; }
+  body {
+    background: #D8E0E6;
+    display: flex; align-items: center; justify-content: center;
+    padding: 24px; box-sizing: border-box;
+  }
+  svg { width: 100%; max-width: 1200px; height: auto; display: block; }
+  .serif { font-family: "Fraunces", Georgia, "Times New Roman", serif; font-weight: 600; }
+  .sans  { font-family: "Outfit", "Segoe UI", system-ui, sans-serif; }
+</style>
+</head>
+<body>
+<svg viewBox="0 0 1200 600" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Darčekový poukaz: Na zážitky, hodnota 20 €">
+  <defs>
+    <clipPath id="leftPanel">
+      <path d="M68,40 H860 V560 H68 A28,28 0 0 1 40,532 V68 A28,28 0 0 1 68,40 Z"/>
+    </clipPath>
+    <g id="flake" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round">
+      <line x1="0" y1="-7" x2="0" y2="7"/>
+      <line x1="-6.1" y1="-3.5" x2="6.1" y2="3.5"/>
+      <line x1="-6.1" y1="3.5" x2="6.1" y2="-3.5"/>
+    </g>
+    <path id="star" d="M0,-9 L2.5,-2.5 L9,0 L2.5,2.5 L0,9 L-2.5,2.5 L-9,0 L-2.5,-2.5 Z" fill="#D9B45A"/>
+  </defs>
+
+  <!-- card shadow + body -->
+  <rect x="40" y="46" width="1120" height="520" rx="28" fill="#1E2F3D" opacity="0.08"/>
+  <rect x="40" y="40" width="1120" height="520" rx="28" fill="#EAF0F4"/>
+
+  <!-- LEFT: scene -->
+  <g clip-path="url(#leftPanel)">
+    <rect x="40" y="40" width="820" height="520" fill="#EAF0F4"/>
+
+    <!-- snowflakes (subtle) -->
+    <use href="#flake" transform="translate(640,90)"/>
+    <use href="#flake" transform="translate(700,160) scale(0.7)"/>
+    <use href="#flake" transform="translate(830,120) scale(0.8)"/>
+    <use href="#flake" transform="translate(600,250) scale(0.6)"/>
+
+    <!-- star above the highest peak -->
+    <use href="#star" transform="translate(770,72)"/>
+
+    <!-- back range: Dolomites-style peaks -->
+    <polygon fill="#E6BDB3" points="40,400 140,370 230,388 330,350 420,372 500,330 560,346 610,282 640,306 680,232 712,276 744,250 790,300 860,270 860,560 40,560"/>
+    <polygon fill="#FFFFFF" points="680,232 670,254 675,250 681,257 688,249 693,254"/>
+    <polygon fill="#FFFFFF" points="744,250 736,265 741,262 745,268 750,262 754,265"/>
+    <polygon fill="#FFFFFF" points="610,282 602,298 607,295 611,301 616,295 620,298"/>
+
+    <!-- mid ridge -->
+    <polygon fill="#C98579" points="40,440 140,412 240,428 340,396 440,418 540,384 640,412 760,380 860,396 860,560 40,560"/>
+
+    <!-- ski slope -->
+    <path fill="#FFFFFF" d="M600,452 C680,420 760,372 860,330 L860,560 L600,560 Z"/>
+
+    <!-- meadow -->
+    <path fill="#2E5247" d="M40,452 C260,438 480,452 860,470 L860,560 L40,560 Z"/>
+
+    <!-- river -->
+    <polygon fill="#A9C3D1" points="39.4,478.0 47.2,479.2 54.4,480.6 61.1,482.1 67.3,483.6 73.0,485.3 78.2,487.1 83.0,488.9 87.4,490.8 91.4,492.8 95.0,494.9 98.3,496.9 101.2,499.1 103.9,501.2 106.3,503.4 108.6,505.7 110.7,508.0 112.7,510.3 114.7,512.8 116.6,515.3 118.5,518.0 120.4,520.8 122.4,523.7 124.4,526.8 126.6,530.0 128.9,533.3 131.4,536.8 134.1,540.4 137.0,544.1 140.1,548.0 143.4,551.9 147.1,556.0 151.0,560.1 155.3,564.3 159.9,568.5 164.8,572.8 170.1,577.1 175.8,581.4 181.9,585.8 188.5,590.1 195.4,594.5 224.6,537.5 218.5,535.0 212.8,532.5 207.5,530.0 202.6,527.6 197.9,525.2 193.6,522.8 189.5,520.5 185.6,518.1 182.0,515.8 178.4,513.5 175.1,511.2 171.8,508.8 168.6,506.5 165.5,504.1 162.4,501.7 159.3,499.3 156.2,496.9 153.0,494.4 149.8,492.0 146.5,489.5 143.1,487.1 139.6,484.7 136.0,482.3 132.2,480.0 128.2,477.9 124.1,475.8 119.7,473.9 115.2,472.1 110.5,470.4 105.6,469.0 100.5,467.6 95.1,466.4 89.5,465.4 83.6,464.5 77.4,463.8 70.8,463.1 63.9,462.7 56.6,462.3 48.8,462.1 40.6,462.0"/>
+
+    <!-- trail to the hut, and the road -->
+    <polygon fill="#EAF0F4" points="477.3,539.3 478.2,537.3 479.3,535.3 480.7,533.2 482.5,531.0 484.6,528.9 486.9,526.7 489.6,524.5 492.4,522.4 495.5,520.2 498.8,518.1 502.3,516.0 506.0,513.9 509.8,511.9 513.8,509.8 517.8,507.8 521.9,505.8 526.1,503.8 530.4,501.8 534.7,499.8 538.9,497.9 543.2,495.9 547.5,493.9 551.7,491.9 555.9,489.9 560.0,487.9 564.0,485.9 567.9,483.8 571.6,481.7 575.2,479.6 578.7,477.4 581.9,475.2 585.0,472.9 587.9,470.6 590.5,468.3 592.8,465.8 594.9,463.3 596.7,460.7 598.1,458.0 599.2,455.3 599.9,452.5 596.1,451.5 595.2,453.7 594.1,455.9 592.6,457.9 590.9,460.0 588.9,462.0 586.6,463.9 584.1,465.8 581.3,467.7 578.3,469.6 575.1,471.4 571.7,473.2 568.1,475.0 564.3,476.7 560.4,478.5 556.4,480.2 552.3,481.9 548.1,483.6 543.8,485.3 539.4,486.9 535.1,488.6 530.6,490.3 526.2,492.1 521.8,493.8 517.4,495.5 513.1,497.3 508.8,499.1 504.5,501.0 500.4,502.9 496.3,504.8 492.4,506.8 488.6,508.9 484.9,511.0 481.4,513.3 478.1,515.6 475.0,518.0 472.0,520.6 469.3,523.3 466.8,526.3 464.6,529.4 462.7,532.7"/>
+    <polygon fill="#EAF0F4" points="40.1,550.0 59.6,549.9 79.1,549.7 98.6,549.5 118.2,549.2 137.7,549.0 157.3,548.6 176.9,548.2 196.5,547.8 216.2,547.4 235.9,546.9 255.6,546.4 275.4,545.8 295.2,545.2 315.0,544.6 334.9,544.0 354.9,543.3 374.9,542.6 395.0,541.8 415.2,541.0 435.4,540.2 455.7,539.4 476.1,538.6 496.5,537.7 517.1,536.8 537.7,535.9 558.4,534.9 579.3,534.0 600.2,533.0 621.2,532.0 642.4,531.0 663.6,529.9 685.0,528.9 706.5,527.8 728.1,526.7 749.8,525.6 771.7,524.5 793.7,523.4 815.8,522.3 838.1,521.1 860.5,520.0 859.5,500.0 837.0,501.3 814.8,502.5 792.6,503.7 770.6,504.9 748.8,506.2 727.1,507.3 705.5,508.5 684.0,509.7 662.6,510.8 641.4,512.0 620.3,513.1 599.3,514.2 578.3,515.3 557.5,516.3 536.8,517.4 516.2,518.4 495.7,519.4 475.2,520.4 454.9,521.3 434.6,522.3 414.4,523.2 394.3,524.0 374.2,524.9 354.2,525.7 334.3,526.5 314.4,527.2 294.6,527.9 274.8,528.6 255.1,529.3 235.4,529.9 215.7,530.5 196.1,531.0 176.5,531.6 157.0,532.0 137.4,532.5 117.9,532.9 98.4,533.2 78.9,533.5 59.4,533.8 39.9,534.0"/>
+
+    <!-- mountain hut -->
+    <g>
+      <rect x="582" y="434" width="34" height="18" fill="#F3F6F8"/>
+      <rect x="606" y="414" width="5" height="12" fill="#1E2F3D"/>
+      <polygon points="574,436 599,415 624,436" fill="#1E2F3D"/>
+      <rect x="587" y="439" width="7" height="7" fill="#D9B45A"/>
+      <rect x="600" y="439" width="8" height="13" fill="#A8665E"/>
+    </g>
+
+    <!-- chairlift -->
+    <g fill="#1E2F3D">
+      <rect x="677.5" y="349.82316114775" width="5" height="70" rx="2"/>
+      <rect x="671" y="347.82316114775" width="18" height="4" rx="2"/>
+      <rect x="827.5" y="277.015925424" width="5" height="70" rx="2"/>
+      <rect x="821" y="275.015925424" width="18" height="4" rx="2"/>
+      <rect x="609" y="382.8" width="279.9" height="2" rx="1" transform="rotate(-25.9 610 383.8)"/>
+      <rect x="639" y="368.238" width="18.0" height="2" rx="1" transform="rotate(90.0 640 369.238)"/>
+      <rect x="631.25" y="383.488" width="14.5" height="3.5" rx="1.75" transform="rotate(0.0 633 385.238)"/>
+      <rect x="631.25" y="383.488" width="10.5" height="3.5" rx="1.75" transform="rotate(-90.0 633 385.238)"/>
+      <rect x="759" y="309.993" width="18.0" height="2" rx="1" transform="rotate(90.0 760 310.993)"/>
+      <rect x="751.25" y="325.243" width="14.5" height="3.5" rx="1.75" transform="rotate(0.0 753 326.993)"/>
+      <rect x="751.25" y="325.243" width="10.5" height="3.5" rx="1.75" transform="rotate(-90.0 753 326.993)"/>
+    </g>
+
+    <!-- pines -->
+    <g>
+      <polygon fill="#1F3B34" points="90,426 79.836,451.52 84.676,451.52 77.9,470 102.1,470 95.324,451.52 100.164,451.52"/>
+      <polygon fill="#1F3B34" points="122,442 114.608,460.56 118.128,460.56 113.2,474 130.8,474 125.872,460.56 129.392,460.56"/>
+      <polygon fill="#1F3B34" points="268,426 259.684,446.88 263.644,446.88 258.1,462 277.9,462 272.356,446.88 276.316,446.88"/>
+      <polygon fill="#1F3B34" points="400,430 390.76,453.2 395.16,453.2 389.0,470 411.0,470 404.84,453.2 409.24,453.2"/>
+      <polygon fill="#1F3B34" points="432,444 425.07,461.4 428.37,461.4 423.75,474 440.25,474 435.63,461.4 438.93,461.4"/>
+      <polygon fill="#1F3B34" points="820,317.543272234 811.222,339.58327223400005 815.402,339.58327223400005 809.55,355.543272234 830.45,355.543272234 824.598,339.58327223400005 828.778,339.58327223400005"/>
+      <polygon fill="#FFFFFF" points="820,317.543272234 815.82,328.183272234 824.18,328.183272234"/>
+      <polygon fill="#1F3B34" points="652,426 645.07,443.4 648.37,443.4 643.75,456 660.25,456 655.63,443.4 658.93,443.4"/>
+      <polygon fill="#FFFFFF" points="652,426 648.7,434.4 655.3,434.4"/>
+    </g>
+
+    <!-- skier -->
+    <g transform="translate(808,393.1) rotate(-24.9) scale(-0.95,0.95)" fill="#1E2F3D">
+        <rect x="-29.75" y="-1.75" width="61.5" height="3.5" rx="1.75" transform="rotate(0.0 -28 0)"/>
+        <rect x="28.25" y="-1.75" width="9.9" height="3.5" rx="1.75" transform="rotate(-38.7 30 0)"/>
+        <rect x="-9.5" y="-6.5" width="24.2" height="7" rx="3.5" transform="rotate(-54.5 -6 -3)"/>
+        <rect x="0.25" y="-20.75" width="23.9" height="7.5" rx="3.75" transform="rotate(-127.6 4 -17)"/>
+        <rect x="-9.1" y="-35.1" width="39.8" height="2.2" rx="1.1" transform="rotate(118.6 -8 -34)"/>
+        <rect x="-11" y="-37" width="37.3" height="14" rx="7" fill="#A8665E" transform="rotate(-59.0 -4 -30)"/>
+        <rect x="-1.5" y="-6.5" width="24.2" height="7" rx="3.5" transform="rotate(-54.5 2 -3)"/>
+        <rect x="8.25" y="-20.75" width="26.6" height="7.5" rx="3.75" transform="rotate(-137.1 12 -17)"/>
+        <rect x="4.25" y="-50.75" width="19.0" height="5.5" rx="2.75" transform="rotate(48.0 7 -48)"/>
+        <rect x="13.5" y="-40.5" width="11.3" height="5" rx="2.5" transform="rotate(18.4 16 -38)"/>
+        <rect x="20.9" y="-37.1" width="46.2" height="2.2" rx="1.1" transform="rotate(129.5 22 -36)"/>
+        <circle cx="14" cy="-58" r="7"/>
+        <path d="M6,-59 a8.5,8 0 0,1 17,0 z"/>
+        <rect x="16" y="-60" width="8" height="4" rx="2" fill="#A8665E"/>
+      
+    </g>
+
+    <!-- hiker -->
+    <g transform="translate(500.1,512.0) scale(0.85)" fill="#1E2F3D">
+        <rect x="1.25" y="-64.75" width="22.1" height="5.5" rx="2.75" transform="rotate(115.0 4 -62)"/>
+        <rect x="-5.5" y="-49.5" width="15.3" height="5" rx="2.5" transform="rotate(119.1 -3 -47)"/>
+        <rect x="-9.25" y="-39.25" width="42.3" height="2.5" rx="1.25" transform="rotate(107.5 -8 -38)"/>
+        <rect x="-3.5" y="-37.5" width="24.7" height="7" rx="3.5" transform="rotate(106.4 0 -34)"/>
+        <rect x="-8" y="-20" width="23.5" height="6" rx="3" transform="rotate(113.6 -5 -17)"/>
+        <rect x="-16.25" y="-2.25" width="12.5" height="4.5" rx="2.25" transform="rotate(0.0 -14 0)"/>
+        <rect x="-17" y="-66" width="15" height="30" rx="5" fill="#A8665E" transform="rotate(8 -10 -50)"/>
+        <rect x="-6" y="-40" width="40.3" height="12" rx="6" transform="rotate(-81.9 0 -34)"/>
+        <rect x="-3.5" y="-37.5" width="24.9" height="7" rx="3.5" transform="rotate(63.4 0 -34)"/>
+        <rect x="5" y="-21" width="23.3" height="6" rx="3" transform="rotate(80.0 8 -18)"/>
+        <rect x="6.75" y="-2.25" width="13.5" height="4.5" rx="2.25" transform="rotate(0.0 9 0)"/>
+        <rect x="1.25" y="-64.75" width="21.6" height="5.5" rx="2.75" transform="rotate(60.3 4 -62)"/>
+        <rect x="9.5" y="-50.5" width="15.6" height="5" rx="2.5" transform="rotate(48.8 12 -48)"/>
+        <rect x="17.75" y="-41.25" width="43.3" height="2.5" rx="1.25" transform="rotate(78.7 19 -40)"/>
+        <circle cx="8" cy="-73" r="7"/>
+        <path d="M0,-75 a8,7.5 0 0,1 16,0 z"/>
+        <rect x="12" y="-76.5" width="7" height="3" rx="1.5"/>
+      
+    </g>
+
+    <!-- runner -->
+    <g transform="translate(300,506.4) scale(0.95)" fill="#1E2F3D">
+        <rect x="-3.25" y="-3.25" width="24.0" height="6.5" rx="3.25" transform="rotate(121.0 0 0)"/>
+        <rect x="-12" y="12" width="23.1" height="6" rx="3" transform="rotate(159.4 -9 15)"/>
+        <rect x="4.25" y="-32.75" width="22.5" height="5.5" rx="2.75" transform="rotate(135.0 7 -30)"/>
+        <rect x="-7.5" y="-20.5" width="16.3" height="5" rx="2.5" transform="rotate(-135.0 -5 -18)"/>
+        <rect x="-6.5" y="-6.5" width="43.8" height="13" rx="6.5" fill="#A8665E" transform="rotate(-76.9 0 0)"/>
+        <rect x="-3.25" y="-3.25" width="24.0" height="6.5" rx="3.25" transform="rotate(31.0 0 0)"/>
+        <rect x="12" y="6" width="27.2" height="6" rx="3" transform="rotate(98.1 15 9)"/>
+        <rect x="9.5" y="27.5" width="12.0" height="5" rx="2.5"/>
+        <rect x="4.25" y="-32.75" width="20.4" height="5.5" rx="2.75" transform="rotate(47.7 7 -30)"/>
+        <rect x="14.5" y="-21.5" width="18.5" height="5" rx="2.5" transform="rotate(-48.0 17 -19)"/>
+        <circle cx="12" cy="-44" r="7.5"/>
+      
+    </g>
+
+    <!-- road cyclist -->
+    <g transform="translate(716,519.6) rotate(-3.0) scale(0.95) translate(0,-21)" fill="#1E2F3D">
+        <path fill-rule="evenodd" d="M-21,0 a21,21 0 1,0 42,0 a21,21 0 1,0 -42,0 Z M-17.5,0 a17.5,17.5 0 1,0 35.0,0 a17.5,17.5 0 1,0 -35.0,0 Z"/>
+        <path fill-rule="evenodd" d="M41,0 a21,21 0 1,0 42,0 a21,21 0 1,0 -42,0 Z M44.5,0 a17.5,17.5 0 1,0 35.0,0 a17.5,17.5 0 1,0 -35.0,0 Z"/>
+        <rect x="-1.75" y="-1.75" width="28.6" height="3.5" rx="1.75" transform="rotate(4.6 0 0)"/>
+        <rect x="-1.5" y="-1.5" width="34.9" height="3" rx="1.5" transform="rotate(-57.8 0 0)"/>
+        <rect x="23" y="0" width="34.1" height="4" rx="2" transform="rotate(-105.4 25 2)"/>
+        <rect x="15" y="-29" width="40.0" height="4" rx="2" transform="rotate(-1.6 17 -27)"/>
+        <rect x="22.75" y="-0.25" width="41.1" height="4.5" rx="2.25" transform="rotate(-35.0 25 2)"/>
+        <rect x="53.25" y="-20.75" width="23.7" height="3.5" rx="1.75" transform="rotate(69.8 55 -19)"/>
+        <rect x="50.75" y="-30.25" width="13.7" height="4.5" rx="2.25" transform="rotate(77.5 53 -28)"/>
+        <rect x="51.25" y="-29.75" width="10.8" height="3.5" rx="1.75" transform="rotate(-15.9 53 -28)"/>
+        <rect x="58.25" y="-31.75" width="10.2" height="3.5" rx="1.75" transform="rotate(63.4 60 -30)"/>
+        <rect x="61.25" y="-25.75" width="9.9" height="3.5" rx="1.75" transform="rotate(128.7 63 -24)"/>
+        <rect x="7.75" y="-33.25" width="16.5" height="4.5" rx="2.25" transform="rotate(0.0 10 -31)"/>
+        <rect x="13.5" y="-40.5" width="30.6" height="7" rx="3.5" transform="rotate(53.6 17 -37)"/>
+        <rect x="28" y="-21" width="33.7" height="6" rx="3" transform="rotate(115.6 31 -18)"/>
+        <rect x="42.25" y="-54.75" width="19.1" height="5.5" rx="2.75" transform="rotate(54.0 45 -52)"/>
+        <rect x="50.5" y="-43.5" width="19.4" height="5" rx="2.5" transform="rotate(56.3 53 -41)"/>
+        <rect x="9.5" y="-44.5" width="46.8" height="15" rx="7.5" fill="#A8665E" transform="rotate(-28.2 17 -37)"/>
+        <rect x="13.5" y="-40.5" width="32.8" height="7" rx="3.5" transform="rotate(35.5 17 -37)"/>
+        <rect x="35" y="-25" width="37.4" height="6" rx="3" transform="rotate(99.2 38 -22)"/>
+        <rect x="28.75" y="7.75" width="12.5" height="4.5" rx="2.25" transform="rotate(0.0 31 10)"/>
+        <path d="M44,-66 a10,9 0 0,1 18,4 l-2,3 h-17 z"/>
+        <circle cx="54" cy="-60" r="6.5"/>
+      
+    </g>
+
+    <!-- title block -->
+    <text x="100" y="122" class="sans" font-size="21" font-weight="500" fill="#A8665E">Darčekový poukaz</text>
+    <text x="96" y="226" class="serif" font-size="104" fill="#1E2F3D">Na zážitky</text>
+  </g>
+
+  <!-- RIGHT: stub -->
+  <path d="M860,40 H1132 A28,28 0 0 1 1160,68 V532 A28,28 0 0 1 1132,560 H860 Z" fill="#1F3B34"/>
+  <use href="#flake" transform="translate(1118,92) scale(0.7)" opacity="0.25"/>
+  <use href="#flake" transform="translate(905,525) scale(0.6)" opacity="0.2"/>
+
+  <g text-anchor="middle" fill="#F3F6F8" transform="translate(0,40)">
+    <text x="1010" y="176" class="sans" font-size="19" opacity="0.7">Hodnota</text>
+    <text x="1010" y="256" class="serif" font-size="76">20 €</text>
+  </g>
+
+  <!-- holly sprig -->
+  <g>
+    <ellipse cx="995" cy="484" rx="17" ry="7" fill="#6F9B7E" transform="rotate(-25 995 484)"/>
+    <ellipse cx="1025" cy="484" rx="17" ry="7" fill="#6F9B7E" transform="rotate(25 1025 484)"/>
+    <circle cx="1005" cy="475" r="5.5" fill="#C2453B"/>
+    <circle cx="1015" cy="475" r="5.5" fill="#C2453B"/>
+    <circle cx="1010" cy="483" r="5.5" fill="#C2453B"/>
+  </g>
+
+  <!-- perforation -->
+  <line x1="860" y1="72" x2="860" y2="528" stroke="#EAF0F4" stroke-opacity="0.55" stroke-width="2.5" stroke-dasharray="1 10" stroke-linecap="round"/>
+  <circle cx="860" cy="40" r="20" fill="#D8E0E6"/>
+  <circle cx="860" cy="560" r="20" fill="#D8E0E6"/>
+</svg>
+</body>
+</html>
