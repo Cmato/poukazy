@@ -2,7 +2,8 @@
 """Build self-contained voucher pages from base/template.html.
 
 Each voucher lives in vouchery/<name>/ with:
-  voucher.json  title, slug, and either "dates" {start, end, year} or "stub" (raw SVG)
+  voucher.json  title, slug, and one of: "dates" {start, end, year}, "flex": true
+                (~ 4 dni, termín podľa dohody), or "stub" (raw SVG)
                 optional: "titleSize" (default 104), "aria" (overrides the generated label)
   scene.svg     the left-panel illustration (snowflakes, star, landscape); drawn
                 under the title, so keep x < 480, y < 240 clear
@@ -50,6 +51,16 @@ def date_stub(d):
     ])
 
 
+# Stub for vouchers without fixed dates: about 4 days, picked by agreement.
+FLEX_STUB = "\n".join([
+    '    <text x="1010" y="130" class="sans" font-size="19" opacity="0.7">Termín</text>',
+    '    <text x="1010" y="202" class="serif" font-size="56">~ 4 dni</text>',
+    '    <text x="1010" y="242" class="sans" font-size="18" opacity="0.7">predĺžený víkend</text>',
+    '    <text x="1010" y="302" class="serif" font-size="40">podľa</text>',
+    '    <text x="1010" y="346" class="serif" font-size="40">dohody</text>',
+])
+
+
 def build(folder: Path):
     cfg = json.loads((folder / "voucher.json").read_text(encoding="utf-8"))
     title = cfg["title"]
@@ -59,6 +70,9 @@ def build(folder: Path):
         d = cfg["dates"]
         stub = date_stub(d)
         aria = f'Darčekový poukaz: {title}, {d["start"]} až {d["end"]} {d["year"]}'
+    elif cfg.get("flex"):
+        stub = FLEX_STUB
+        aria = f"Darčekový poukaz: {title}, približne 4 dni, predĺžený víkend, termín podľa dohody"
     else:
         stub = cfg["stub"].rstrip("\n")
         aria = f"Darčekový poukaz: {title}"
