@@ -14,19 +14,23 @@
     display: flex; align-items: center; justify-content: center;
     padding: 24px; box-sizing: border-box;
   }
-  svg { width: 100%; max-width: 1170px; height: auto; display: block; }
+  svg { width: 100%; max-width: 1295px; height: auto; display: block; }
   .serif { font-family: "Fraunces", Georgia, "Times New Roman", serif; font-weight: 600; }
   .sans  { font-family: "Outfit", "Segoe UI", system-ui, sans-serif; }
 </style>
 </head>
 <body>
-<svg viewBox="0 0 1170 450" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Darčekový poukaz: Na zážitky, hodnota 50 €">
-  <!-- Full-bleed ticket at 2.6:1 so it fills the gift page's image frame.
-       Scenes are drawn in the original 820×520 panel coordinates (x 40–860, y 40–560);
-       the panel shows y 60–510 of that, stretched 6 % horizontally to 870 wide. -->
+<svg viewBox="0 0 1295 498" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Darčekový poukaz: Na zážitky, hodnota 50 €">
+  <!-- 2.6:1 overall so it fills the gift page's image frame: a 1247×450 ticket with a
+       24px page-coloured margin. Scenes are drawn in the original 820×520 panel
+       coordinates (x 40–860, y 40–560); the panel shows y 60–510 of that, stretched
+       6 % horizontally to 870 wide. -->
   <defs>
+    <clipPath id="ticket">
+      <rect width="1247" height="450" rx="28"/>
+    </clipPath>
     <clipPath id="leftPanel">
-      <rect x="0" y="0" width="870" height="450"/>
+      <rect width="870" height="450"/>
     </clipPath>
     <g id="flake" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round">
       <line x1="0" y1="-7" x2="0" y2="7"/>
@@ -36,7 +40,12 @@
     <path id="star" d="M0,-9 L2.5,-2.5 L9,0 L2.5,2.5 L0,9 L-2.5,2.5 L-9,0 L-2.5,-2.5 Z" fill="#D9B45A"/>
   </defs>
 
-  <rect width="1170" height="450" fill="#EAF0F4"/>
+  <rect width="1295" height="498" fill="#D8E0E6"/>
+  <rect x="24" y="30" width="1247" height="450" rx="28" fill="#1E2F3D" opacity="0.08"/>
+
+  <g transform="translate(24,24)">
+  <g clip-path="url(#ticket)">
+  <rect width="1247" height="450" fill="#EAF0F4"/>
 
   <!-- LEFT: scene -->
   <g clip-path="url(#leftPanel)">
@@ -200,18 +209,18 @@
     <text x="60" y="172" class="serif" font-size="104" fill="#1E2F3D">Na zážitky</text>
   </g>
 
-  <!-- RIGHT: stub -->
-  <rect x="870" y="0" width="300" height="450" fill="#1F3B34"/>
-  <use href="#flake" transform="translate(1128,46) scale(0.7)" opacity="0.25"/>
+  <!-- RIGHT: stub (centre x 1058.5) -->
+  <rect x="870" width="377" height="450" fill="#1F3B34"/>
+  <use href="#flake" transform="translate(1210,46) scale(0.7)" opacity="0.25"/>
   <use href="#flake" transform="translate(912,420) scale(0.6)" opacity="0.2"/>
 
-  <g text-anchor="middle" fill="#F3F6F8" transform="translate(10,-35)">
+  <g text-anchor="middle" fill="#F3F6F8" transform="translate(48.5,-35)">
     <text x="1010" y="176" class="sans" font-size="19" opacity="0.7">Hodnota</text>
     <text x="1010" y="256" class="serif" font-size="76">50 €</text>
   </g>
 
   <!-- holly sprig -->
-  <g transform="translate(10,-80)">
+  <g transform="translate(48.5,-80)">
     <ellipse cx="995" cy="484" rx="17" ry="7" fill="#6F9B7E" transform="rotate(-25 995 484)"/>
     <ellipse cx="1025" cy="484" rx="17" ry="7" fill="#6F9B7E" transform="rotate(25 1025 484)"/>
     <circle cx="1005" cy="475" r="5.5" fill="#C2453B"/>
@@ -223,6 +232,8 @@
   <line x1="870" y1="32" x2="870" y2="418" stroke="#EAF0F4" stroke-opacity="0.55" stroke-width="2.5" stroke-dasharray="1 10" stroke-linecap="round"/>
   <circle cx="870" cy="0" r="20" fill="#D8E0E6"/>
   <circle cx="870" cy="450" r="20" fill="#D8E0E6"/>
+  </g>
+  </g>
 </svg>
 </body>
 </html>
